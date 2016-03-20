@@ -19,9 +19,13 @@ func _input(event):
          self.set_pos(Vector2(event.x,event.y)) 
 
 
+
+
 func _process(delta):
-   if(Input.is_action_pressed("MOVE_HORIZONTAL")):
-      var cur_pos = self.get_pos()
-      cur_pos.x += .5
-      self.set_pos(cur_pos)
+    # if user left clicks
+   if(event.is_action("MOVE_HORIZONTAL")):
+         var cur_pos = self.get_pos()
+         cur_pos = (Vector2(event.x,event.y)) 
+         self.set_pos(cur_pos)
+                  
 
