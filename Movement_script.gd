@@ -8,7 +8,9 @@ extends Sprite
 func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
-	pass
+	#need to tell godot you want to process each cycle.
+	# this means setting process to true.
+	set_process(true)
 
 
 func _process(delta):
