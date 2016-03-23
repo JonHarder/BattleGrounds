@@ -3,7 +3,7 @@ extends KinematicBody2D
 
 var speed = 200
 var gravity = 3.0
-var TERMINAL_VEL = 50
+const TERMINAL_VEL = 50
 var dy = 0
 
 func _ready():

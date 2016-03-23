@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="TileSet" subresource_count="6" version="2.0" version_name="Godot Engine v2.0.stable.official">
+<resource_file type="TileSet" subresource_count="9" version="2.0" version_name="Godot Engine v2.0.stable.official">
 	<ext_resource path="res://resources/dirt.png" type="Texture" index="0"></ext_resource>
 	<ext_resource path="res://resources/rock.png" type="Texture" index="1"></ext_resource>
 	<ext_resource path="res://resources/sky.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://resources/rock-diamond.png" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://resources/dirt-emerald.png" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://resources/dirt-stone.png" type="Texture" index="5"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2 name="extents"> 10, 10 </vector2>
@@ -42,6 +45,36 @@
 		<resource name="2/occluder"></resource>		<vector2 name="2/navigation_offset"> 20, 20 </vector2>
 		<resource name="2/navigation"></resource>		<vector2 name="2/shape_offset"> 0, 0 </vector2>
 		<array name="2/shapes" len="0" shared="false">
+		</array>
+		<string name="3/name"> "rock-diamond" </string>
+		<resource name="3/texture" external="3">  </resource>
+		<vector2 name="3/tex_offset"> 0, 0 </vector2>
+		<resource name="3/material"></resource>		<rect2 name="3/region"> 0, 0, 0, 0 </rect2>
+		<vector2 name="3/occluder_offset"> 20, 20 </vector2>
+		<resource name="3/occluder"></resource>		<vector2 name="3/navigation_offset"> 20, 20 </vector2>
+		<resource name="3/navigation"></resource>		<vector2 name="3/shape_offset"> 20, 20 </vector2>
+		<array name="3/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://2">  </resource>
+		</array>
+		<string name="4/name"> "dirt-emerald" </string>
+		<resource name="4/texture" external="4">  </resource>
+		<vector2 name="4/tex_offset"> 0, 0 </vector2>
+		<resource name="4/material"></resource>		<rect2 name="4/region"> 0, 0, 0, 0 </rect2>
+		<vector2 name="4/occluder_offset"> 20, 20 </vector2>
+		<resource name="4/occluder"></resource>		<vector2 name="4/navigation_offset"> 20, 20 </vector2>
+		<resource name="4/navigation"></resource>		<vector2 name="4/shape_offset"> 20, 20 </vector2>
+		<array name="4/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://2">  </resource>
+		</array>
+		<string name="5/name"> "dirt-stone" </string>
+		<resource name="5/texture" external="5">  </resource>
+		<vector2 name="5/tex_offset"> 0, 0 </vector2>
+		<resource name="5/material"></resource>		<rect2 name="5/region"> 0, 0, 0, 0 </rect2>
+		<vector2 name="5/occluder_offset"> 20, 20 </vector2>
+		<resource name="5/occluder"></resource>		<vector2 name="5/navigation_offset"> 20, 20 </vector2>
+		<resource name="5/navigation"></resource>		<vector2 name="5/shape_offset"> 20, 20 </vector2>
+		<array name="5/shapes" len="1" shared="false">
+			<resource  resource_type="Shape2D" path="local://2">  </resource>
 		</array>
 
 	</main_resource>
