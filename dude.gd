@@ -6,6 +6,8 @@ var gravity = 3.0
 const TERMINAL_VEL = 50
 var dy = 0
 
+var max_move_distance = 3
+
 func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
@@ -27,3 +29,6 @@ func _fixed_process(delta):
 	else:
 		dy = 0
 	move(Vector2(0,dy))
+
+func move_num_tiles():
+	
