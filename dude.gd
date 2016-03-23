@@ -16,7 +16,10 @@ func _fixed_process(delta):
 		move(Vector2(-speed*delta,0))
 	if(Input.is_action_pressed("MOVE_RIGHT")):
 		move(Vector2(speed*delta, 0))
-
+	if(Input.is_action_pressed("JUMP")):
+		move(Vector2(0, -speed*delta))
+		
+		
 	# figure out how to count collisions only for bottom edge
 	if(!is_colliding()):
 		if(dy < TERMINAL_VEL):
