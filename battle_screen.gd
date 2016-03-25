@@ -13,3 +13,10 @@ func _ready():
 func _process(delta):
 	if(Input.is_action_pressed("QUIT")):
 		print("EXITING")
+		
+		
+#Input handler, listen for ESC to exit app
+func _input(event):
+   if(event.is_pressed()):
+      if(event.scancode == KEY_ESCAPE):
+         get_tree().quit() 
